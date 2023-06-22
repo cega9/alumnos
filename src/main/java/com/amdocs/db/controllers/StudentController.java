@@ -39,7 +39,7 @@ public class StudentController {
         return this.studentService.saveStudent(student);
     }
 
-    @DeleteMapping("/usuario")
+    @DeleteMapping()
     public Boolean deleteStudentById(@RequestBody StudentModel student){
            return this.studentService.deleteById(student.getId());
     }
